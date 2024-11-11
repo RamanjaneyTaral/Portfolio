@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RunAway</title>
+        <style>
+            body {
+                background: linear-gradient(to bottom, #f849a1, #040720);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0px;
+                font-family: Arial, sans-serif;
+                color: white;
+                width: 100%;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                max-width: 1200px;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            .video-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin-top: 40px;
+            }
+            video {
+                width: 100%;
+                max-width: 800px;
+            }
+            .description {
+                margin-top: 40px;
+                font-size: 1.2em;
+                max-width: 800px;
+                width: 100%;
+                text-align: left; /* Align text to the left */
+            }
+            .photos {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+                margin-top: 40px;
+                margin-bottom: 40px; /* Adds gap after photos */
+                width: 100%;
+            }
+            .photo {
+                width: 30%;
+                max-width: 200px;
+                height: auto;
+                border: 2px solid white;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="video-section">
+                <video controls autoplay muted src="Unreal Engine Modular Endless Runner Shooter Trailer(1080P 60Fps).mp4"></video>
+            </div>
+            <div class="description">
+                <h2>Run Away</h2>
+                <p>
+                    Run Away
+Run Away Documentation <br>
+Purpose :- <br>
+Run Away Game Based On Blueprint Endless Runner Shooter Template for Unreal Engine that provides core functionalities like modular tile creation, obstacles and power-ups spawning and a mechanism to change gameplay style during runtime.
+EndlessRunnerShooterGameMode :-  <br>
+Choose Endless RunnerShooterGameMode to be Game Mode in your level. This will set Default Pawn Class to EndlessRunnerShooterPawn automatically.
+GameManager :-
+Add the GameManager blueprint to your level. This blueprint controls the game state (Running, Shooting, Flying, etc..) and also determines which game state to choose depending on the current one. Image below shows possible game states to choose after each state.
+(Flying → Running, etc..)
+Animation Blueprint :-
+Animation blueprint for the player character needs to be the same as the EndlessRunnerShooterAnimationBlueprint class.
+<br>
+Required variables are :- <br>
+isInAir?
+speed
+gameState
+yaw
+pitch
+sliding
+landed
+Set these variables at the Event Graph section of the animation blueprint.
+Required animations are;
+Walk/Run Blendspace
+Jump start
+Jump loop
+Jump end
+Slide
+Fly
+Land
+AimOffsets
+Game State :-
+The most important feature of this template is to be able to change gameplay mechanics during run-time. This template provides 3 different gameplays Running, Shooting and Flying
+                </p>
+
+            </div>
+            <div class="photos">
+                <img src="2ltZx1.jpg" alt="Run Away Screenshot 4" class="photo">
+                    <img src="7qnDX6.jpg" alt="Run Away Screenshot 3" class="photo">
+                    <img src="nFBL_e.jpg" alt="Run Away Screenshot 2" class="photo">
+                    <img src="RjkpO0.jpg" alt="Run Away Screenshot 1" class="photo">
+            </div>
+        </div>
+    </body>
+</html>
