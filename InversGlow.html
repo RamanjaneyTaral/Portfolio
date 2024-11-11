@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>InversGlow</title>
+        <style>
+            body {
+                background: linear-gradient(to bottom, #f849a1, #040720);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0px;
+                font-family: Arial, sans-serif;
+                color: white;
+                width: 100%;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                max-width: 1200px;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            .video-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin-top: 40px;
+            }
+            video {
+                width: 100%;
+                max-width: 800px;
+            }
+            .description {
+                margin-top: 40px;
+                font-size: 1.2em;
+                max-width: 800px;
+                width: 100%;
+                text-align: left; /* Align text to the left */
+            }
+            .photos {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+                margin-top: 40px;
+                margin-bottom: 40px; /* Adds gap after photos */
+                width: 100%;
+            }
+            .photo {
+                width: 30%;
+                max-width: 200px;
+                height: auto;
+                border: 2px solid white;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="video-section">
+                <video controls autoplay muted src="SnakyBirdTrailer(1080P_HD).mp4"></video>
+            </div>
+            <div class="description">
+                <h2>Inverse Glow</h2>
+                <p>
+                    This is a 2D game made in Unreal Engine 4.27. It was a submission for ScoreSpace Jam and also my first game in the challenge of making this type of game.
+                </p>
+                <p>
+                    I created this game using Unreal Engine 4.27 and utilized Unreal Engine visual scripting blueprints and modules to bring it to life.
+                </p>
+            </div>
+            <div class="photos">
+                <img src="cRqP8d.png" alt="Inverse Glow Screenshot 4" class="photo">
+                    <img src="WYEcph.png" alt="Inverse Glow Screenshot 3" class="photo">
+                    <img src="zJ_V2l.png" alt="Inverse Glow Screenshot 1" class="photo">
+            </div>
+        </div>
+    </body>
+</html>

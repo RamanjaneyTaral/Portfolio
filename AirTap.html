@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Air Tap</title>
+        <style>
+            body {
+                background: linear-gradient(to bottom, #f849a1, #040720);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0px;
+                font-family: Arial, sans-serif;
+                color: white;
+                width: 100%;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                max-width: 1200px;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            .video-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin-top: 40px;
+            }
+            video {
+                width: 100%;
+                max-width: 800px;
+            }
+            .description {
+                margin-top: 40px;
+                font-size: 1.2em;
+                max-width: 800px;
+                width: 100%;
+                text-align: left; /* Align text to the left */
+            }
+            .photos {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+                margin-top: 40px;
+                margin-bottom: 40px; /* Adds gap after photos */
+                width: 100%;
+            }
+            .photo {
+                width: 30%;
+                max-width: 200px;
+                height: auto;
+                border: 2px solid white;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="video-section">
+                <video controls autoplay muted src="Desktop 2024.10.24 - 21.48.17.01.mp4"></video>
+            </div>
+            <div class="description">
+                <h2>Air Tap Game Demo</h2>
+                <p>
+                    Air Tap is a side-scrolling game, like the popular game Super Mario Brothers, where the player controls a bird in a 2D environment. Unlike Mario, the player only has control over the bird's vertical movement. The main goal is for the bird to travel as far as it can without hitting any dark purple pipes.
+                    I created this game using Unity Game Engine and a bunch of C# scripts like:
+                    Bird Script, Pipe Script, Pipes Spawner Script, Basic Controllers, Colliders, and UI for the Score and Game Over screen.
+                </p>
+            </div>
+            <div class="photos">
+                <img src="Screenshot 2024-10-24 214408.png" alt="Air Tap Screenshot 4" class="photo">
+                <img src="Screenshot 2024-10-24 214532.png" alt="Air Tap Screenshot 3" class="photo">
+                <img src="Screenshot 2024-10-24 214652.png" alt="Air Tap Screenshot 2" class="photo">
+                <img src="Screenshot 2024-10-24 214756.png" alt="Air Tap Screenshot 1" class="photo">
+            </div>
+        </div>
+    </body>
+</html>
