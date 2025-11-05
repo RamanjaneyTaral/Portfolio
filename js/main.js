@@ -69,18 +69,8 @@ onePageClick();
 const menu = document.getElementById('menu');
 const body = document.body;
 
-function toggleMenu() {
-  menu.classList.toggle('open');
-  if (menu.classList.contains('open')) {
-    body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
-  } else {
-    body.style.overflow = 'auto'; // Allow scrolling when menu is closed
-  }
-}
+// Note: Malformed toggleMenu snippet removed due to syntax error on some devices
 
-
-
-	
 
 	var carousel = function() {
 		$('.home-slider').owlCarousel({
