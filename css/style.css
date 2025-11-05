@@ -9888,14 +9888,14 @@ textarea.form-control {
 }
 
 @media only screen and (max-width: 768px) {
-  /* Adjustments for mobile */
   body {
-    padding-top: 0; /* Remove any top padding */
+    padding-top: 0; /* Remove top padding on small screens */
   }
 }
+
 html, body {
   overflow-x: hidden; /* Hide horizontal overflow if needed */
-  overflow-y: auto;   /* Allow vertical scrolling */
+  overflow-y: scroll;   /* Allow vertical scrolling */
 }
 body {
   min-height: 100vh;
