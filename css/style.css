@@ -9888,7 +9888,7 @@ textarea.form-control {
   color: #040720; /* LinkedIn blue color */
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
   body {
     padding-top: 0; /* Remove top padding on small screens */
   }
