@@ -9901,3 +9901,31 @@ html, body {
 body {
   min-height: 100vh;
 }
+
+/* Mobile-only touch/scroll fixes for hero slider */
+@media screen and (max-width: 768px) {
+	#home-section .home-slider,
+	#home-section .home-slider .owl-stage-outer,
+	#home-section .home-slider .owl-stage,
+	#home-section .home-slider .owl-item,
+	#home-section .home-slider .slider-item,
+	#home-section .slider-text,
+	#home-section .slider-text .one-third,
+	#home-section .slider-text .one-forth,
+	#home-section .slider-text .text {
+		-ms-touch-action: pan-y;
+		touch-action: pan-y;
+	}
+
+	/* Ensure overlays do not intercept touch events */
+	#home-section .slider-item .overlay,
+	#home-section .slider-item .overlay-1 {
+		pointer-events: none;
+	}
+
+	/* Disable Scrollax transforms on mobile to prevent scroll lock */
+	[data-scrollax],
+	[data-scrollax-parent] {
+		transform: none !important;
+	}
+}

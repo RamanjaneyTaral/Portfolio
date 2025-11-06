@@ -32,8 +32,20 @@
 	};
 	loader();
 
-	// Scrollax
-   $.Scrollax();
+	// Scrollax: enable only on desktop/tablet; disable on mobile to avoid touch scroll conflicts
+	var initScrollax = function() {
+		var isDesktop = window.innerWidth > 768;
+		if (isDesktop) {
+			if ($ && $.Scrollax) {
+				$.Scrollax();
+			}
+		} else {
+			// Best-effort cleanup: clear inline transforms applied by Scrollax
+			$('[data-scrollax], [data-scrollax-parent]').css('transform', '');
+		}
+	};
+	initScrollax();
+	$(window).on('resize orientationchange', initScrollax);
 
 // Burger Menu Toggle
 var burgerMenu = function() {
